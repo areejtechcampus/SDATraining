@@ -1,4 +1,4 @@
-package testPackage;
+package tests.junit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
