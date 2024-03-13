@@ -23,14 +23,14 @@ public class AssignAmazon extends Tests{
         try {
             // Take full page screenshot
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileHandler.copy(src, new File("img1.png"));
+            FileHandler.copy(src, new File("./target/img1.png"));
 
             // Try to find the element
             WebElement element = driver.findElement(By.id("nav-logo"));
 
             // If element is found, take screenshot of it
             File src2 = element.getScreenshotAs(OutputType.FILE);
-            FileHandler.copy(src2, new File("img2.jpg"));
+            FileHandler.copy(src2, new File("./target/img3.jpg"));
         } catch (NoSuchElementException e) {
             // Handle NoSuchElementException gracefully
             System.out.println("Element with ID 'nav-logo' not found on the page.");

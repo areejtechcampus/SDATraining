@@ -14,6 +14,7 @@ public class GoogleTests extends Tests {
      * 4. create a new class
      * 5. do a quick google search and assert that result stats is not empty using testng
      */
+
     @Test
     public void googleSearchTest(){
         bot.navigate("https://www.google.com/");
