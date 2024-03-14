@@ -1,7 +1,8 @@
-package tests.junit;
+package tests.junit.Assignments;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.Cookie;
+import tests.junit.Tests;
 
 public class AssignCookie extends Tests {
     /* Go to URL: http://facebook.com

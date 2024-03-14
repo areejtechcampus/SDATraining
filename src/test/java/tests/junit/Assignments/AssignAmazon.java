@@ -1,16 +1,17 @@
-package tests.junit;
+package tests.junit.Assignments;
 
 import org.apache.logging.log4j.core.util.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
+import tests.junit.Tests;
 
 
 import java.io.File;
 import java.io.IOException;
 
-public class AssignAmazon extends Tests{
+public class AssignAmazon extends Tests {
     /* Go to amazon.com
     * Take full page Screenshot
     * Take any spesific WebElement Screenshot

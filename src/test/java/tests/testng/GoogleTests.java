@@ -1,5 +1,7 @@
 package tests.testng;
 
+import com.beust.jcommander.Parameter;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -15,7 +17,8 @@ public class GoogleTests extends Tests {
      * 5. do a quick google search and assert that result stats is not empty using testng
      */
 
-    @Test
+    @Parameters({"search-query"})
+    @Test(groups = {"sanityCheck", "quiTests"})
     public void googleSearchTest(){
         bot.navigate("https://www.google.com/");
         By googleSearchInput = By.cssSelector("textarea#APjFqb");

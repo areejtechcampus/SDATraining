@@ -1,14 +1,15 @@
-package tests.junit;
+package tests.junit.Assignments;
 
-import org.junit.jupiter.api.Assertions;
+
+import org.junit.jupiter.api.Test;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import org.openqa.selenium.By;
+import tests.junit.Tests;
 
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
-public class AssignInternet<Set> extends Tests {
+public class AssignInternet extends Tests {
     /** Go to URL: https://the-internet.herokuapp.com/windows
      * Verify the text: “Opening a new window”
      * Verify the title of the page is “The Internet”
@@ -20,10 +21,9 @@ public class AssignInternet<Set> extends Tests {
 public void task2(){
     // Go to URL: https://the-internet.herokuapp.com/windows
     driver.navigate().to("https://the-internet.herokuapp.com/windows");
-
     // Verify the text: “Opening a new window”
     By newWindow = By.tagName("h3");
-    Assertions.assertEquals("Opening a new window", driver.findElement(newWindow).getText());
+    Assert.assertEquals("Opening a new window", driver.findElement(newWindow).getText());
 
     // Verify the title of the page is “The Internet”
     assertTrue(driver.getTitle().contains("The Internet"));
