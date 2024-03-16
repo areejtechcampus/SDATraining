@@ -59,7 +59,7 @@ public void DragDrop(){
                 return true; });
     //Verify the visibility of Perfect text.
     logger.info("Verify the visibility of Perfect text");
-    By message = By.xpath("(//a[contains(@class, 'button-green')])[1]");
+    By message = By.xpath("(//a[contains(@class, 'button-green')])");
     String actual =  driver.findElement(message).getText();
 
     Assertions.assertEquals(actual, "Perfect!");
