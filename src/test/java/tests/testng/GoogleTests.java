@@ -1,12 +1,14 @@
 package tests.testng;
 
 import com.beust.jcommander.Parameter;
+import engine.CustomerListener;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import tests.junit.Tests;
-
+@Listeners(CustomerListener.class)
 public class GoogleTests extends Tests {
     /**
      * Breakout task: 40 minutes
